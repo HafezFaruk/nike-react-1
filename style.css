@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 /* nav 
 ---------------*/
@@ -48,3 +49,12 @@ nav ul li{
     height: 350px;
 }
 
+.image-icon img{
+    height: 66px;
+    width: 62px;
+    margin-right: 10px;
+}
+.image-icon h5{
+    font-size: 1.3rem;
+
+}
