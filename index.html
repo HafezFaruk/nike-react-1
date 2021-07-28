@@ -5,77 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike React</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="icons/logo.png" alt="" width="230" height="35">
-                    </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                      </li>
-                    </ul>
-                  </div>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="icons/logo.png" alt="" width="230" height="35">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>      
+    
+    <main>
+            <!-- start home -->
+        <section id="home">
+            <div class="row align-items-center justify-content-between">
+                <!-- image -->
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/main-logo-shoes.png" alt="">
                 </div>
-              </nav>
-        </header>
-    </section>
-    <!-- start home -->
-    <section id="home">
-        <div class="row align-items-center justify-content-between">
-            <!-- image -->
-            <div class="col-lg-6">
-                <img class="img-fluid" src="images/main-logo-shoes.png" alt="">
+                <!-- article -->
+                <div class="col-lg-4 px-4">
+                <article class="home__article">
+                        <h1 class="text-uppercase text-warning">nike react</h1>
+                        <h1 class="text-uppercase">infinity run 2</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aperiam?</p>
+                        <button type="button" class="btn btn-primary button__white-space">
+                            <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
+                            <span class="text-uppercase">buy now</span>
+                        </button>
+                </article>
+                </div>
             </div>
-            <!-- article -->
-            <div class="col-lg-4 px-4">
-               <article class="home__article">
-                    <h1 class="text-uppercase text-warning">nike react</h1>
-                    <h1 class="text-uppercase">infinity run 2</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, aperiam?</p>
-                    <button type="button" class="btn btn-primary button__white-space">
-                        <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
-                        <span class="text-uppercase">buy now</span>
-                    </button>
-               </article>
-            </div>
-        </div>
-    </section>
-    <!-- end home -->
-    <!-- ------------------------------------ -->
-    <!-- casual shoes -->
-    <section class="mt-5">
-        <div class="container">
-            <h1 class="text-uppercase mb-5">casual shoes</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- casual-shoes-1 -->
-                <div class="col">
+        </section>
+        <!-- end home -->
+        <!-- ------------------------------------ -->
+        <!-- casual shoes -->
+        <section class="mt-5">
+            <div class="container">
+                <h1 class="text-uppercase casual-h1 mb-5">casual shoes</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- casual-shoes-1 -->
+                    <div class="col">
+                        <div class="card h-100 border border-0">
+                            <div class="casual-image">
+                                <img src="images/casual-shoes-1.png" class="card-img-top img-fluid" alt="images/casual-shoes">
+                            </div>
+                            <div class="card-body shoes-text">
+                                <h5 class="card-title">Nike Shoe</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer price d-flex justify-content-between border border-0">
+                                <small class="fw-bold">$234</small>
+                                <button type="button" class="btn btn-primary button__white-space">
+                                    <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
+                                    <span class="text-uppercase">buy now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- casual-shoes-2 -->
+                    <div class="col">
                     <div class="card h-100 border border-0">
                         <div class="casual-image">
-                            <img src="images/casual-shoes-1.png" class="card-img-top img-fluid" alt="images/casual-shoes">
-                        </div>
-                        <div class="card-body">
-                        <h5 class="card-title">Nike Shoe</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <img src="images/casual-shoes-2.png" class="card-img-top img-fluid" alt="images/casual-shoes">
+                        </div>                    
+                        <div class="card-body shoes-text">
+                            <h5 class="card-title">Sneakers Skate Shoe </h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                         </div>
                         <div class="card-footer price d-flex justify-content-between border border-0">
                             <small class="fw-bold">$234</small>
@@ -85,61 +104,16 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <!-- casual-shoes-2 -->
-                <div class="col">
-                  <div class="card h-100 border border-0">
-                    <div class="casual-image">
-                        <img src="images/casual-shoes-2.png" class="card-img-top img-fluid" alt="images/casual-shoes">
-                    </div>                    <div class="card-body">
-                      <h5 class="card-title">Sneakers Skate Shoe </h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
-                    <div class="card-footer price d-flex justify-content-between border border-0">
-                        <small class="fw-bold">$234</small>
-                        <button type="button" class="btn btn-primary button__white-space">
-                            <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
-                            <span class="text-uppercase">buy now</span>
-                        </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- casual-shoes-3 -->
-                <div class="col">
-                  <div class="card h-100 border border-0">
-                    <div class="casual-image">
-                        <img src="images/casual-shoes-3.png" class="card-img-top img-fluid" alt="images/casual-shoes">
-                    </div>                    <div class="card-body">
-                      <h5 class="card-title">Sneakers Basketball shoe</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer price d-flex justify-content-between border border-0">
-                        <small class="fw-bold">$234</small>
-                        <button type="button" class="btn btn-primary button__white-space">
-                            <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
-                            <span class="text-uppercase">buy now</span>
-                        </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-      <!-- ------------------------------------ -->
-    <!-- formal shoes -->
-    <section class="my-5">
-        <div class="container">
-            <h1 class="text-uppercase">formal shoes</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- formal-shoes-1 -->
-                <div class="col">
+                    <!-- casual-shoes-3 -->
+                    <div class="col">
                     <div class="card h-100 border border-0">
-                        <div>
-                            <img src="images/formal-shoes-1.png" class="card-img-top img-fluid" alt="images/casual-shoes">
-                        </div>
-                        <div class="card-body">
-                        <h5 class="card-title">Prestige High-Cut Leather </h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="casual-image">
+                            <img src="images/casual-shoes-3.png" class="card-img-top img-fluid" alt="images/casual-shoes">
+                        </div>                    
+                        <div class="card-body shoes-text">
+                            <h5 class="card-title">Sneakers Basketball shoe</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
                         <div class="card-footer price d-flex justify-content-between border border-0">
                             <small class="fw-bold">$234</small>
@@ -149,91 +123,123 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <!-- formal-shoes-2 -->
-                <div class="col">
-                  <div class="card h-100 border border-0">
-                    <div>
-                        <img src="images/formal-shoes-2.png" class="card-img-top img-fluid" alt="images/casual-shoes">
-                    </div>                    <div class="card-body">
-                      <h5 class="card-title">Slip-On Formal Shoe</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
-                    <div class="card-footer price d-flex justify-content-between border border-0">
-                        <small class="fw-bold">$234</small>
-                        <button type="button" class="btn btn-primary button__white-space">
-                            <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
-                            <span class="text-uppercase">buy now</span>
-                        </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- formal-shoes-3 -->
-                <div class="col">
-                  <div class="card h-100 border border-0">
-                    <div>
-                        <img src="images/formal-shoes-3.png" class="card-img-top img-fluid" alt="images/casual-shoes">
-                    </div>                    <div class="card-body">
-                      <h5 class="card-title">Slip-On Formal Shoe</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer price d-flex justify-content-between border border-0">
-                        <small class="fw-bold">$234</small>
-                        <button type="button" class="btn btn-primary button__white-space">
-                            <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
-                            <span class="text-uppercase">buy now</span>
-                        </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-
-    <section class="my-5">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-4">
-                   <div class="row">
-                        <!-- image-icon-1 -->
-                       <div class="col-12 image-icon shadow-lg mb-3 rounded-3 pt-2">
-                            <div class="d-flex align-items-center">
-                                <img class="image-icon" src="icons/image-1.png" alt="">
-                                <div>
-                                    <h5>Find the Perfect Fit</h5>
-                                    <p>Everybody is different, which is why we offer styles for every body.</p>
-                                </div>
-                            </div>
-                       </div>
-                        <!-- image-icon-2 -->
-                       <div class="col-12 image-icon shadow-lg mb-3 rounded-3 pt-2">
-                            <div class="d-flex align-items-center">
-                                <img class="image-icon" src="icons/image-2.png" alt="">                              
-                                <div>
-                                    <h5>Free Exchanges</h5>
-                                    <p>One of the many reasons you can shop with peace of mind.</p>
-                                </div>
-                            </div>
-                       </div>
-                        <!-- image-icon-3 -->
-                       <div class="col-12 image-icon shadow-lg mb-3 rounded-3 pt-2">
-                            <div class="d-flex align-items-center">
-                                <img src="icons/image-3.png" alt="">                               
-                                <div>
-                                    <h5>Contact Our Seller</h5>
-                                    <p>They are here to help you. That's quite literally what we pay them for.</p>
-                                </div>
-                            </div>
-                       </div>
-                   </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="icons/xmlid.png" alt="">
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+        <!-- ------------------------------------ -->
+        <!-- formal shoes -->
+        <section class="my-5">
+            <div class="container">
+                <h1 class="text-uppercase formal-h1">formal shoes</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- formal-shoes-1 -->
+                    <div class="col">
+                        <div class="card h-100 border border-0">
+                            <div>
+                                <img src="images/formal-shoes-1.png" class="card-img-top img-fluid" alt="images/casual-shoes">
+                            </div>
+                            <div class="card-body shoes-text">
+                                <h5 class="card-title">Prestige High-Cut Leather </h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer price d-flex justify-content-between border border-0">
+                                <small class="fw-bold">$234</small>
+                                <button type="button" class="btn btn-primary button__white-space">
+                                    <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
+                                    <span class="text-uppercase">buy now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- formal-shoes-2 -->
+                    <div class="col">
+                    <div class="card h-100 border border-0">
+                        <div>
+                            <img src="images/formal-shoes-2.png" class="card-img-top img-fluid" alt="images/casual-shoes">
+                        </div>                    
+                        <div class="card-body shoes-text">
+                            <h5 class="card-title">Slip-On Formal Shoe</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer price d-flex justify-content-between border border-0">
+                            <small class="fw-bold">$234</small>
+                            <button type="button" class="btn btn-primary button__white-space">
+                                <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
+                                <span class="text-uppercase">buy now</span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- formal-shoes-3 -->
+                    <div class="col">
+                    <div class="card h-100 border border-0">
+                        <div>
+                            <img src="images/formal-shoes-3.png" class="card-img-top img-fluid" alt="images/casual-shoes">
+                        </div>                    
+                        <div class="card-body shoes-text">
+                            <h5 class="card-title">Slip-On Formal Shoe</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer price d-flex justify-content-between border border-0">
+                            <small class="fw-bold">$234</small>
+                            <button type="button" class="btn btn-primary button__white-space">
+                                <img class="button__shopping--cart" src="icons/shopping-cart.png" alt="">
+                                <span class="text-uppercase">buy now</span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <section class="my-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 icon-left mt-5">
+                       <div class="row">
+                            <!-- image-icon-1 -->
+                           <div class="col-12 image-icon shadow-lg mb-3 rounded-3 pt-2 mx-1">
+                                <div class="d-flex align-items-center image__icon--responsiv">
+                                    <img src="icons/image-1.png" alt="">
+                                    <div>
+                                        <h5>Find the Perfect Fit</h5>
+                                        <p>Everybody is different, which is why we offer styles for every body.</p>
+                                    </div>
+                                </div>
+                           </div>
+                            <!-- image-icon-2 -->
+                           <div class="col-12 image-icon shadow-lg mb-3 rounded-3 pt-2 mx-1">
+                                <div class="d-flex align-items-center image__icon--responsiv">
+                                    <img src="icons/image-2.png" alt="">                              
+                                    <div>
+                                        <h5>Free Exchanges</h5>
+                                        <p>One of the many reasons you can shop with peace of mind.</p>
+                                    </div>
+                                </div>
+                           </div>
+                            <!-- image-icon-3 -->
+                           <div class="col-12 image-icon shadow-lg mb-3 rounded-3 pt-2 mx-1">
+                                <div class="d-flex align-items-center image__icon--responsiv">
+                                    <img src="icons/image-3.png" alt="">                               
+                                    <div>
+                                        <h5>Contact Our Seller</h5>
+                                        <p>They are here to help you. That's quite literally what we pay them for.</p>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-6 icon-right mt-5">
+                        <img class="img-fluid" src="icons/xmlid.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

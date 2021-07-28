@@ -8,6 +8,12 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+h5{
+    font-weight: 700;
+    font-size: 1.2rem;
+    white-space:nowrap;
+
+}
 /* nav 
 ---------------*/
 nav ul li{
@@ -35,6 +41,10 @@ nav ul li{
 /* end home 
 -----------------*/
 /* casual shoes*/
+.shoes-text{
+    padding: 0;
+    margin-top: 1.2rem;
+}
 .price{
     background-color: #fff;
 }
@@ -50,11 +60,27 @@ nav ul li{
 }
 
 .image-icon img{
-    height: 66px;
-    width: 62px;
+    height: 80px;
+    width: 76px;
     margin-right: 10px;
 }
 .image-icon h5{
     font-size: 1.3rem;
 
 }
+@media only screen and (max-width: 767px) {
+    .icon-left{
+        order: 2;
+    }
+    .icon-right{
+        order: 1;
+    }
+    .image__icon--responsiv{
+        flex-direction: column;
+        text-align: center;
+    }
+    .formal-h1,
+    .casual-h1{
+        text-align: center;
+    }
+  }
